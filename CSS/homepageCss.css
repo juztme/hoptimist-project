@@ -1,0 +1,1361 @@
+@font-face {
+	font-family: HeroLight;
+	src: url(../Hero%20Light.otf); /*Links to the special font in our folder. This font is used on all pages*/
+}
+
+body {
+	font-family:HeroLight; /*Sets the actual font and an extra font needs to be added*/
+	overflow-x: hidden; /*Does not allow horizontal scrolling*/
+	letter-spacing:-1px; /*creates less space between letters*/
+	word-spacing:3px; /*Creates extra space between words, the letter-spacing created too much word-space.*/
+	color:#4a4a4a;
+	
+}
+
+h2 {
+    color:#4e6cbc;
+    font-size:20px;
+}
+
+#bg {
+	background-image:url(../img/backgroundIMG.jpg);
+    background-size: cover; /*Makes the background cover the entire site*/
+	background-repeat:no-repeat; /*Does not allow repeat*/
+    overflow-x: hidden;
+ 	position:fixed; /*Fixes the image as the background so it does not have to stretch*/
+    height:100%;
+	width:100%; /*100% height and width fills out the screen no matter size*/
+	top: 0; 
+    left: 0; 
+	z-index:-50; /*Brings it to the bakground behind other objects*/
+}
+
+#hoplogo { /*setting the origina hoptimist logo*/
+	background-image:url(../img/OriginLogo.png);
+	height:55px;
+	width:159px;
+	position:relative;
+	top:50px;
+	background-repeat:no-repeat;
+	left:100px;
+	display:block;
+}
+
+#JoyTitle {
+	text-align:center;
+	font-size:30px;
+	position:relative;
+	right:173px;
+	top:65px;
+}
+
+.joymeter {
+	margin-left:auto; /* margin autos and display block sets it in the middle*/
+	margin-right:auto;
+	display:block;
+    position:relative;
+	top:45px;
+	height:35px;
+	width:500px;
+}
+#mobilemenubutton{
+    display:none;
+    
+}
+
+
+#progressbar {
+	margin-left:auto; /* margin autos and display block sets it in the middle*/
+	margin-right:auto;
+	display:block;
+    position:relative;
+	top:20px;
+	height:70px;
+	width:500px;
+	color:red;
+}
+
+#banner { /*Setting the banner*/
+	background-image:url(../img/banner.png);
+	height:444px;
+	width:100%; /*stretches the width to fill out the entire screen*/
+	top:250px;
+	position:absolute;
+    display:block;
+}
+
+#reallogo { /*The team's logo*/
+	background-image:url(../img/placeholderLogo.png);
+	height:160px;
+	width:200px;
+	background-repeat:no-repeat;
+	position:relative;
+	margin-top:480px;
+	margin-left:auto; /* margin autos and display block sets it in the middle*/
+	margin-right:auto;
+	visibility:hidden;
+	z-index:10;
+	
+}
+
+#motivationText {
+	text-align: center;
+	font-size:32px;
+	position:relative;
+	top:-100px;
+	left:10px;
+
+}
+
+/*START Left wrapper Content. new hoptimist, profile and rank*/
+#rankIMG { /*rank icon*/
+	height:50px;
+	width:40px;
+	padding-right:25px;
+	margin-bottom:-10px; /*placing centered according to text*/
+	position:relative;
+}
+
+#rankArea { /*Ranking information, icon, text etc*/
+	font-size:28px;
+	position:relative;
+    width: 65%;
+    margin: 0 auto;
+    top:-10px;
+    left:-30px;
+}
+
+
+#progress { /*progress bar of ranking*/
+	padding-left:110px;
+	margin-bottom:-15px;
+	height:35px;
+	width:500px;
+	position:relative;
+	left:80px;
+}
+
+#user-info { /*changes the font-size of the user-name only*/
+    font-size:27px;
+}
+
+#user-info, #fb-auth { /*position button and profile info*/
+    position:relative;
+    left:200px;
+    top:50px;
+    border:none;
+    background:none;
+    width:300px;
+}
+
+#user-info img { /*user profile picture*/
+    border-radius:100%;
+}
+
+#LeftWrapper {
+/*May need to change to float left and right depending on next section.*/
+	width:70%;
+	top:100px;
+	position:relative;
+	margin: 0 auto;
+	top:50px;
+}
+
+#createButton {
+	height:60px;
+	width:330px;
+	position:relative;
+	color:white;
+	background-color:#4e6cbc;
+	border-radius:8px;
+}
+ a {
+    text-decoration:none;    
+}
+#createButton:hover{
+    background-color:#2B60DE;
+    border-radius:8px;
+    
+}
+
+#createIMG {
+    position:relative;
+	top:25px;	
+	left:10px;
+}
+
+#ButtonContent {
+	font-size:24px;
+    bottom:35px;
+	position:relative;
+	right:10px;
+}
+
+#historyhops{
+    display:block;
+    position:relative;
+    top:10px;
+}
+
+#history{
+  height:35px;
+	width:200px;
+	position:relative;
+	color:white;
+	background-color:#4e6cbc;
+	border-radius:8px;
+	margin-left:130px;
+}
+
+#historytext{
+	font-size:24px;
+	position:relative;
+	text-align:center;
+	top:5px;
+}
+#history:hover{
+    background-color:#2B60DE;
+    border-radius:8px;
+    height:35px;
+	width:200px;
+}
+
+/*END Left wrapper Content. new hoptimist, profile and rank*/
+
+/*RIGHT content with badges START*/
+#RightWrapper { /*positioning of the entire right side's content*/
+	width:35%;
+	height:700px;
+	float:right;
+	bottom:541px;
+	right:200px;
+	position:relative;
+	margin: 0 auto;
+	margin-bottom:-390px; /*Avoids the large space between content and footer*/
+}
+
+#badgeTitle { /*Badges title*/
+	color:#4e6cbc;
+	font-size:28px;
+}
+
+.BadgesIcon { /*Badges icons placement*/
+	height:100px;
+	width:100px;
+	position:relative;
+	right:15px;
+	top:20px;
+}
+
+#gradient { /*Gradient effect on end text on the last badge to fade into the button*/
+	background: -webkit-linear-gradient(#333, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#ViewMore { /*View more button*/
+	height:35px;
+	width:200px;
+	position:relative;
+	color:white;
+	background-color:#4e6cbc;
+	border-radius:8px;
+    left:142px;
+	top:30px;
+}
+#ViewMore:hover{
+    background-color:#2B60DE;
+    border-radius:8px;
+}
+#ViewText { /*view more text positiong*/
+	font-size:24px;
+	position:relative;
+	text-align:center;
+	top:5px;
+}
+
+
+
+/*RIGHT content with badges END*/
+
+/*FOOTER & Content */
+
+#Footerbg {
+	background-color:#d9dce4;
+    position: relative;
+	margin-top: -260px; /* negative value of footer height */
+	height:180px;
+	width:145%;
+	clear:both;
+	bottom:-53px;
+	padding:0;
+	left:0;
+}
+
+/*captions of the two tables in the footer*/
+caption {
+	font-size:28px;
+	text-align:left;
+	padding-bottom:20px; /*Space between captopn and icons*/
+}
+
+/*START of sponsor icons*/
+#tableSponsor {
+	position:relative;
+	top:28px;
+	left:200px;
+	width:20%;
+}
+
+#ecoGreen {
+	height:70px;
+	width:90px;
+}
+
+#Soundplan {
+	height:70px;
+	width:90px;
+}
+
+#imerco {
+	height:70px;
+	width:90px;
+}
+
+#kopogkande {
+	height:70px;
+	width:90px;
+}
+/*END of sponsor icons*/
+
+/*Contact icons code START*/
+#tableSocial {
+	float:right;
+	position:relative;
+	right:980px;
+	top:-95px;
+	width:15%;
+}
+
+
+/*Properties of all social icons in the footer*/
+.SocialMediaIcon {
+	height:50px;
+	width:50px;
+	padding-right:15px;
+}
+/*Contact icons code END*/
+/*END FOOTER & Content */
+
+#contactform{
+    position:relative;
+    background-color:#D9DCE4;
+    width:20%;
+    border-radius:8px;
+    left:650px;
+    top:-430px;
+    display:none;
+    border: solid 1px gray;
+}
+#exitform{
+    width:15px;
+    height:15px;
+    background-color:black;
+    color:white;
+    border-radius:4px;
+    position:relative;
+    top:-13.5px;
+    left:250px;
+}
+#exittext{
+    position:relative;
+    left:3px;
+    bottom:1.5px;
+}
+
+#exitform:hover{
+    background-color:gray;
+}
+#questions{
+    font-size:20px;
+}
+
+
+
+#submitbutton{
+    background-color:#4e6cbc;
+    border-radius:8px;
+    color:white;
+}
+#submitbutton:hover{
+    background-color:#2B60DE;
+    border-radius:8px;
+}
+
+
+/*customization page css*/
+#CustJoyTitle {
+	text-align:center;
+	font-size:30px;
+	position:relative;
+	right:-110px;
+	top:40px;
+}
+
+.Custjoymeter {
+	left:700px;
+	display:block;
+    position:relative;
+	top:20px;
+	height:35px;
+	width:25%;
+}
+
+#CustLeftWrapper {
+	float:left;
+	width:30%;
+	left:100px;
+	top:50px;
+	position:relative;
+	display:block;
+	margin-bottom:70px;
+}
+
+#CustLeftWrapper p {
+	width:78%;
+}
+
+#CustRightWrapper {
+	float:right;
+	right:300px;
+	top:55px;
+	position:relative;
+	display:block;
+}
+
+#shareButton {
+    width:330px;
+}
+
+#custhoplogo{
+    background-image:url(../img/OriginLogo.png);
+	height:55px;
+	width:159px;
+	background-repeat:no-repeat;
+	display:block;
+    position:absolute;
+    left:100px;
+    top:50px;
+}
+
+#ourlogo {
+    background-image:url(../img/placeholderLogo.png);
+	height:100px;
+	width:200px;
+	position:absolute;
+	left:300px;
+	top:30px;
+	visibility:hidden;
+}
+
+#button {
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#custFooterbg {
+	background-color:#d9dce4;
+    position: relative;
+	margin-top: -260px; /* negative value of footer height */
+	height:180px;
+	width:145%;
+	clear:both;
+	bottom:-53px;
+	padding:0;
+	left:0;
+}
+
+#custcontactform{
+    position:relative;
+    background-color:#D9DCE4;
+    width:20%;
+    border-radius:8px;
+    left:650px;
+    top:-430px;
+    display:none;
+    border:solid 1px gray;
+}
+
+#custexitform{
+    width:15px;
+    height:15px;
+    background-color:black;
+    color:white;
+    border-radius:4px;
+    position:relative;
+    top:-13.5px;
+    left:250px;
+}
+#custexittext{
+    position:relative;
+    left:3px;
+    bottom:1.5px;
+}
+
+#custexitform:hover{
+    background-color:gray;
+}
+/*Menus for the customization canvas*/
+.menuBox {
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+	background-color:white;
+	border:1px solid black;
+	border-radius:5px;
+	width:110px;
+	height:125px;
+	padding:0;
+}
+
+.menuBox a {
+		text-decoration:none;
+		color:black;
+}
+
+.menuBox ul {
+		list-style-type: none;
+		padding-left:0;
+}
+.menuBox ul li{
+		border-bottom: 1px solid black; 
+		padding-left:10px;
+}
+.menuBox li:last-child {
+	border-bottom:none;
+}
+
+ul>:first-child {
+	background-color:#3bafda;
+	margin-top:-16px;
+	border-radius:4px 4px 0px 0px;
+	border-bottom:none;
+	font-size:14px;
+	color:white;
+}
+
+#custexitinfotext {
+    display:none;
+}
+
+/*end of customization page*/
+
+
+@media screen and (max-width: 1024px){ /*tablet landscape query*/
+#hoplogo { /*setting the original hoptimist logo*/
+	top:50px;
+	left:400px;
+}
+
+#JoyTitle {
+	right:225px;
+	top:100px;
+}
+
+.joymeter {
+	top:20px;
+	left:230px;
+	width:40%;
+}
+
+#banner { /*Setting the banner*/
+    display:none;
+}
+
+#reallogo { /*The team's logo*/
+	position:absolute;
+	top:-460px;
+	left:550px;
+	z-index:10;
+}
+
+
+#motivationText {
+	display:none;
+}
+
+#rankIMG { /*rank icon*/
+	right:29px;
+	top:-10px;
+}
+
+#rankname{
+	position:relative;
+	top:30px;
+	left:75px;
+	}
+#user-info, #fb-auth { /*position button and profile info*/
+    position:relative;
+    left:100px;
+    top:50px;
+    border:none;
+    background:none;
+    width:300px;
+}
+#progress { /*progress bar of ranking*/
+	margin-left:230px;
+	margin-top:-80px;
+	width:61%;
+	position:relative;
+	left:65px;
+	top:-30px;
+	
+}
+#rankArea { /*Ranking information, icon, text etc*/
+	top:50px;
+	left:-50px;
+}
+
+#LeftWrapper {
+/*May need to change to float left and right depending on next section.*/
+	width:70%;
+	top:80px;
+	left:-50px;
+	position:relative;
+	margin: 0 auto;
+}
+
+
+#RightWrapper { /*positioning of the entire right side's content*/
+	position:relative;
+	right:70px;
+	width:37%;
+	top:-530px;
+	margin-bottom:-500px; /*Avoids the large space between content and footer*/
+}
+
+#badgeTitle { /*Badges title*/
+	color:#4e6cbc;
+	font-size:25px;
+}
+
+.BadgesIcon { /*Badges icons placement*/
+	height:80px;
+	width:80px;
+}
+
+#ViewMore { /*View more button*/
+    left:55px;
+	top:-30px;
+}
+
+#tableSponsor {
+	position:relative;
+	top:28px;
+	left:90px;
+}
+
+caption{
+    font-size:20px;
+}
+#ecoGreen {
+	height:60px;
+	width:80px;
+}
+
+#Soundplan {
+	height:60px;
+	width:80px;
+}
+
+#imerco {
+	height:60px;
+	width:80px;
+}
+
+#kopogkande {
+	height:60px;
+	width:80px;
+}
+
+#tableSocial {
+    position:relative;
+	right:668px;
+	top:-80px;
+}
+
+#contactform{
+    position:relative;
+    background-color:#D9DCE4;
+    width:27%;
+    border-radius:8px;
+    left:577px;
+    top:-400px;
+    display:none;
+    border:solid 1px gray;
+}
+
+/*CUSTOMIZATION PAGE CSS*/
+#CustJoyTitle {
+	text-align:center;
+	font-size:30px;
+	position:relative;
+	right:-150px;
+	top:40px;
+}
+
+.Custjoymeter {
+	left:570px;
+	display:block;
+    position:relative;
+	top:30px;
+	height:35px;
+	width:33.8%;
+}
+
+#CustLeftWrapper {
+	float:left;
+	width:48%;
+	left:35px;
+	top:65px;
+	position:relative;
+	display:block;
+	margin-bottom:200px;
+}
+
+#CustLeftWrapper p {
+	width:84%;
+	font-size:13px;
+}
+
+#CustRightWrapper {
+	float:right;
+	right:95px;
+	top:235px;
+	position:absolute;
+	display:block;
+}
+#custhoplogo{
+    background-image:url(../img/OriginLogo.png);
+	height:55px;
+	width:159px;
+	background-repeat:no-repeat;
+	display:block;
+    position:absolute;
+    left:50px;
+}
+#ourlogo {
+    background-image:url(../img/placeholderLogo.png);
+	height:100px;
+	width:200px;
+	position:absolute;
+	left:220px;
+	top:30px;
+	visibility:hidden;
+}
+
+#button {
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#tableSponsor{
+    position:absolute;
+    left:180px;
+    top:28px;
+}
+
+#tableSocial{
+    position:absolute;
+    left:610px;
+    top:28px;
+}
+
+#custcontactform{
+    position:relative;
+    background-color:#D9DCE4;
+    width:27%;
+    border-radius:8px;
+    left:650px;
+    top:-360px;
+    display:none;
+    border:solid 1px gray;
+}
+/*end of customization page*/
+
+} /*end of tablet query*/
+
+@media screen and (max-width: 600px) { /*tablet vertical query*/ 
+#hoplogo { /*setting the original hoptimist logo*/
+	top:50px;
+	left:200px;
+}
+
+#JoyTitle {
+	right:100px;
+	top:100px;
+	font-size:25px;
+}
+
+.joymeter {
+	top:20px;
+	left:150px;
+	width:40%;
+}
+
+#banner { /*Setting the banner*/
+    display:none;
+}
+
+#reallogo { /*The team's logo*/
+	position:absolute;
+	top:-460px;
+	left:345px;
+	z-index:10;
+	visibility:hidden;
+}
+
+
+#motivationText {
+	display:none;
+}
+
+#rankArea { /*Ranking information, icon, text etc*/
+	top:30px;
+	left:-50px;
+	font-size:25px;
+}
+#rankIMG { /*rank icon*/
+	right:10px;
+	top:-7px;
+}
+
+#progress { /*progress bar of ranking*/
+	margin-left:155px;
+	margin-top:-80px;
+	position:relative;
+	top:-30px;
+	left:6px;
+	width:62%;
+}
+
+#user-info, #fb-auth { /*position button and profile info*/
+    position:relative;
+    left:70px;
+    top:50px;
+    border:none;
+    background:none;
+    width:300px;
+}
+
+#LeftWrapper {
+	width:70%;
+	top:50px;
+	left:40px;
+	position:relative;
+	margin: 0 auto;
+}
+
+#history:hover{
+    background-color:#2B60DE;
+    border-radius:8px;
+}
+
+#RightWrapper { /*positioning of the entire right side's content*/
+	right:100px;
+	width:60%;
+	top:100px;
+	margin-bottom:-250px; /*Avoids the large space between content and footer*/
+}
+
+#badgeTitle { /*Badges title*/
+	color:#4e6cbc;
+	font-size:25px;
+}
+
+.BadgesIcon { /*Badges icons placement*/
+	height:80px;
+	width:80px;
+}
+
+#ViewMore { /*View more button*/
+    left:32px;
+	top:-30px;
+}
+
+#Footerbg {
+	background-color:#d9dce4;
+    position: relative;
+	margin-top:-180px; /* negative value of footer height */
+	height:280px;
+	width:105%;
+	margin-left:-8px;
+	top:450px;
+	clear:both;
+}
+
+#tableSponsor {
+	position:relative;
+	top:28px;
+	left:125px;
+}
+caption{
+    font-size:20px;
+}
+#ecoGreen {
+	height:60px;
+	width:80px;
+}
+
+#Soundplan {
+	height:60px;
+	width:80px;
+}
+
+#imerco {
+	height:60px;
+	width:80px;
+}
+
+#kopogkande {
+	height:60px;
+	width:80px;
+}
+
+#tableSocial {
+	left:127px;
+	top:140px;
+}
+
+#contactform{
+    position:relative;
+    background-color:#D9DCE4;
+    width:47%;
+    border-radius:8px;
+    left:159px;
+    top:-200px;
+    display:none;
+    border:solid 1px gray;
+}
+
+/*CUSTOMIZATION PAGE CSS*/
+#CustJoyTitle {
+	text-align:center;
+	font-size:30px;
+	position:relative;
+	right:200px;
+	top:150px;
+}
+
+.Custjoymeter {
+	left:225px;
+	display:block;
+    position:relative;
+	top:90px;
+	height:35px;
+	width:60%;
+}
+
+#CustLeftWrapper {
+	float:left;
+	width:45%;
+	left:5px;
+	top:95px;
+	position:relative;
+	display:block;
+	margin-bottom:20px;
+}
+
+#CustLeftWrapper p {
+	width:82%;
+	font-size:13px;
+}
+
+#CustRightWrapper {
+	float:right;
+	right:10px;
+	top:280px;
+	position:absolute;
+	display:block;
+}
+#custhoplogo{
+    background-image:url(../img/OriginLogo.png);
+	height:55px;
+	width:159px;
+	background-repeat:no-repeat;
+    position:absolute;
+    left:90px;
+}
+#ourlogo {
+    background-image:url(../img/placeholderLogo.png);
+	height:100px;
+	width:200px;
+	position:absolute;
+	left:300px;
+	top:30px;
+	visibility:hidden;
+}
+
+#button {
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#custFooterbg {
+	background-color:#d9dce4;
+    position: relative;
+	margin-top: -260px; /* negative value of footer height */
+	height:250px;
+	width:145%;
+	clear:both;
+	bottom:-164px;
+	padding:0;
+	left:-10px;
+}
+
+#custcontactform{
+    position:relative;
+    background-color:#D9DCE4;
+    width:47%;
+    border-radius:8px;
+    left:156px;
+    top:-200px;
+    display:none;
+    border:solid 1px gray;
+}
+
+/*end of customization page*/
+} /*end of query for vertical version of tablet*/
+
+@media screen and (max-width: 480px){ /*smartphone query*/
+
+body {
+	overflow-y:scroll;
+}
+
+#hoplogo { /*setting the original hoptimist logo*/
+	top:20px;
+	left:170px;
+	position:absolute;
+	display:block;
+}
+
+#JoyTitle {
+	right:110px;
+	top:60px;
+}
+
+.joymeter {
+	width:98%;
+	height:30px;
+	top:40px;
+	left:-2px;
+}
+
+#banner { /*Setting the banner*/
+	display:none;
+}
+#reallogo { /*The team's logo*/
+	position:absolute;
+	top:-480px;
+	left:200px;
+	z-index:10;
+	display:none;
+}
+
+#motivationText {
+	display:none;
+}
+
+#progress { /*progress bar of ranking*/
+	display:none;
+}
+
+/*START Left wrapper Content. new hoptimist, profile and rank*/
+
+#rankArea { /*Ranking information, icon, text etc*/
+	position:relative;
+	top:-10px;
+	left:-10px;
+	font-size:24px;
+}
+#rankIMG  {
+	padding-right:0px;
+	bottom:210px; /*placing centered according to text*/
+	position:relative;
+	margin-bottom:50px;
+	top:50px;
+	left:-40px;
+}
+
+#user-info, #fb-auth { /*position button and profile info*/
+    position:relative;
+    left:10px;
+}
+
+#LeftWrapper {
+	width:70%;
+	top:50px;
+	left:-45px;
+	position:relative;
+	margin: 0 auto;
+}
+
+#history:hover{
+    background-color:#2B60DE;
+    border-radius:8px;
+}
+
+/*END Left wrapper Content. new hoptimist, profile and rank*/
+
+/*RIGHT content with badges START*/
+#RightWrapper { /*positioning of the entire right side's content*/
+	width:91%;
+	height:700px;
+	float:right;
+	bottom:-100px;
+	right:5px;
+	position:relative;
+	margin: 0 auto;
+	margin-bottom:-300px; /*Avoids the large space between content and footer*/
+	font-size:18px;
+}
+
+#badgeTitle{
+    font-size:22px;
+}
+.BadgesIcon { /*Badges icons placement*/
+	height:60px;
+	width:60px;
+	position:relative;
+	right:15px;
+	top:20px;
+}
+
+
+#ViewMore { /*View more button*/
+	top:-20px;
+	left:14px;
+}
+
+#ViewText { /*view more text positiong*/
+	font-size:18px;
+	position:relative;
+	text-align:center;
+	top:6px;
+}
+
+/*RIGHT content with badges END*/
+
+/*FOOTER & Content */
+
+#Footerbg {
+	background-color:#d9dce4;
+    position: relative;
+	margin-top:700px; /* negative value of footer height */
+	height:255px;
+	width:110%;
+	margin-left:-8px;
+	top:150px;
+	clear:both;
+	/*bottom:-50px;*/
+}
+
+/*START of sponsor icons*/
+#tableSponsor {
+	position:relative;
+	top:28px;
+	left:25px;
+}
+
+#ecoGreen {
+	height:50px;
+	width:70px;
+}
+
+#Soundplan {
+	height:50px;
+	width:70px;
+}
+
+#imerco {
+	height:50px;
+	width:70px;
+}
+
+#kopogkande {
+	height:50px;
+	width:70px;
+}
+/*END of sponsor icons*/
+
+/*Contact icons code START*/
+#tableSocial {
+	position:absolute;
+	left:25px;
+	top:150px;
+}
+
+#contactform{
+    position:absolute;
+    background-color:#D9DCE4;
+    width:80%;
+    border-radius:8px;
+    left:35px;
+    top:1680px;
+    display:none;
+    border:solid 1px gray;
+}
+
+#exitform{
+    width:15px;
+    height:15px;
+    background-color:black;
+    color:white;
+    border-radius:4px;
+    position:relative;
+    top:-13.5px;
+    left:260px;
+}
+
+/*Properties of all social icons in the footer*/
+.SocialMediaIcon {
+	height:40px;
+	width:40px;
+	padding-right:15px;
+	margin-top:9px;
+}
+/*Contact icons code END*/
+/*END FOOTER & Content */
+
+/*CUSTOMIZATION PAGE CSS*/
+#CustJoyTitle {
+	text-align:center;
+	font-size:30px;
+	position:relative;
+	right:90px;
+	top:10px;
+}
+
+.Custjoymeter {
+	left:0px;
+	display:block;
+    position:relative;
+	top:-10px;
+	height:35px;
+	width:101%;
+}
+
+#mobilemenubutton{
+    height:60px;
+	width:60px;
+	position:absolute;
+	top:115px;
+	left:283px;
+	display:block;
+}
+
+#CustLeftWrapper {
+    z-index:5;
+    width:97%;
+    display:none;
+    background-color:#D9DCE4;
+    border-radius:8px;
+    border:solid 1px gray;
+}
+
+#custexitinfo{
+    width:15px;
+    height:15px;
+    background-color;black;
+    font-size:18px;
+    border-radius:4px;
+    position:relative;
+    top:-11px;
+    left:304px;
+
+}
+
+#custexitinfotext{
+    position:relative;
+    top:1px;
+    left:-10px;
+    display:block;
+    color:black;
+    cursor:pointer;
+}
+
+
+#CustRightWrapper {
+	float:right;
+	right:10px;
+	top:200px;
+	position:absolute;
+	display:block;
+}
+#custhoplogo{
+    background-image:url(../img/OriginLogo.png);
+	height:55px;
+	width:159px;
+	background-repeat:no-repeat;
+    position:absolute;
+    left:180px;
+    top:10px;
+}
+#ourlogo {
+    background-image:url(../img/placeholderLogo.png);
+	height:100px;
+	width:200px;
+	position:absolute;
+	left:200px;
+	top:700px;
+	visibility:hidden;
+}
+
+#custFooterbg {
+	background-color:#d9dce4;
+    position: relative;
+	margin-top:400px; /* negative value of footer height */
+	height:255px;
+	width:120%;
+	margin-left:-8px;
+	bottom:-100;
+	clear:both;
+	/*bottom:-50px;*/
+}
+
+#button {
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#custcontactform{
+    position:absolute;
+    background-color:#D9DCE4;
+    width:77%;
+    border-radius:8px;
+    left:40px;
+    top:680px;
+    display:none;
+    border:solid 1px gray;
+}
+
+#custexitform{
+    width:15px;
+    height:15px;
+    background-color:black;
+    color:black;
+    border-radius:4px;
+    position:relative;
+    top:-13.5px;
+    left:220px;
+}
+
+/*end of customization page*/
+
+} /*end of media query for smartphones*/
